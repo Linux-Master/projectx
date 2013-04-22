@@ -1,0 +1,8 @@
+print "TESTE BIBLICO "
+a = Adao
+input = (" Qual o nome do primeiro homem ?  ")
+a == Adao:
+  print (" Parabens! " )
+while
+a != Adao:
+  print (" Tente novamente")
