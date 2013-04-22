@@ -6,3 +6,4 @@ a == Adao:
 while
 a != Adao:
   print (" Tente novamente")
+return (0)
