@@ -1,0 +1,69 @@
+#!/bin/bash
+# Run like a root and have fun ;)
+# By MMxM e Md. Morpheus
+# http://www.the-blackhats.blogspot.com
+
+
+main(){
+  clear
+	echo 
+	echo "Deseja instalar o repositorio de programas" 
+	echo "	do Kali no seu sistema ? s/n"
+	read minhavo
+		if [ $minhavo = "s" ]
+			then
+				clear
+				echo
+				echo -e "\033[0;31m[+]\033[0m\033[1;36mInicializando instalaÃ§Ã£o ...\033[0m"
+				sleep 2
+				echo
+				echo -e "\033[0;31m[+]\033[0m\033[1;36mObtendo chave PGP\033[0m"
+				echo
+				sleep 2
+				wget -q -O - http://archive.kali.org/archive-key.asc | gpg --import
+				echo
+				echo -e "\033[1;32m[-]\033[0m\033[1;36mChave obtida com sucesso\033[0m"
+				echo
+				echo -e "\033[0;31m[+]\033[0m\033[1;36mAdicionando chave ao repositorio de chaves\033[0m"
+				echo
+				apt-key add trusted.gpg
+				rm trusted.gpg
+				echo
+				echo -e "\033[1;32m[-]\033[0m\033[1;36mChave adicionada com sucesso\033[0m"
+				echo
+				echo -e "\033[0;31m[+]\033[0m\033[1;36mAdicionando repositorio de programas em /etc/apt/sources.list\033[0m"
+				sleep 2			
+				echo
+				echo -e "\033[0;31m[+]\033[0m\033[1;36mAdicionando repositorio de programas em /etc/apt/sources.list\033[0m"
+				sleep 2				
+				echo
+				echo '' >> /etc/apt/sources.list
+				echo '## Kali Linux ##' >> /etc/apt/sources.list
+				echo 'deb http://http.kali.org/ /kali main contrib non-free' >> /etc/apt/sources.list
+				echo 'deb http://http.kali.org/ /wheezy main contrib non-free' >> /etc/apt/sources.list
+				echo 'deb http://http.kali.org/kali kali-dev main contrib non-free' >> /etc/apt/sources.list
+				echo 'deb http://http.kali.org/kali kali-dev main/debian-installer' >> /etc/apt/sources.list
+				echo 'deb http://http.kali.org/kali kali main contrib non-free' >> /etc/apt/sources.list
+				echo 'deb http://http.kali.org/kali kali main/debian-installer' >> /etc/apt/sources.list
+				echo 'deb-src http://security.kali.org/kali-security kali/updates main contrib non-free' >> /etc/apt/sources.list
+				echo 'deb-src http://http.kali.org/kali kali main contrib non-free' >> /etc/apt/sources.list
+				echo 'deb http://security.kali.org/kali-security kali/updates main contrib non-free' >> /etc/apt/sources.list
+				echo -e "\033[1;32m[-]\033[0m\033[1;36mRepositorio adicionado ao arquivo /etc/apt/sources.list\033[0m"
+				echo
+				echo -e "\033[0;31m[+]\033[0m\033[1;36mRunning apt-get update\033[0m"
+				echo
+				sleep 2
+				apt-get update
+				clear
+				echo -e "\033[0;31m[*]\033[0m\033[1;36mRepositorio de Programas do Kali Linux Instalado !!!\033[0m"
+				sleep 1
+				echo -e "\033[0;31m[*]\033[0m\033[1;36mDigite o comando #apt-get install metasploit para testar\033[0m"
+				echo
+				echo "Visitem http://the-blackhats.blogspot.com"
+				echo
+				exit 0;
+		else
+			exit 0;
+fi
+}
+main;
