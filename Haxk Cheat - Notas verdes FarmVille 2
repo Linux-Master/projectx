@@ -1,32 +1,30 @@
-  ____________________________________________
+	____________________________________________
 	|==========================================|
-	|		DINHEIRO		                           |
+	|		DINHEIRO		   |
 	|==========================================|
 	| 40 42 OF 00 40 42 OF 00 00 00 00 00      |
-	|	 				                                 |
-	| 36 00 00 00 36 00 00 00 00 00 00 00	     |
+	|	 				   |
+	| 36 00 00 00 36 00 00 00 00 00 00 00	   |
 	|==========================================|
-	|   	     PASSAR DE NIVEL		             |
+	|   	     PASSAR DE NIVEL		   |
 	|==========================================|
-	| 8D 01 00 00 01 00 00 00		               |
-	|				                              	   |
-	| F0 49 02 00 01 00 00 00	 	               |
+	| 8D 01 00 00 01 00 00 00		   |
+	|					   |
+	| F0 49 02 00 01 00 00 00	 	   |
 	|==========================================|
-	|		TIRAR PEDRAS		                       |
+	|		TIRAR PEDRAS		   |
 	|==========================================|
-	| obstruction_rock			                   |
- 	| obstruction_stump			                   |
-	| e_deco_shrub_round		               	   |
+	| obstruction_rock			   |
+ 	| obstruction_stump			   |
+	| e_deco_shrub_round			   |
 	|==========================================|
-	|		GALINHEIROS		                         |
+	|		GALINHEIROS		   |
 	|==========================================|
-	| e_tree_fruit_orange (Laranjeira)    	   |
-	| e_building_henhouse	              		   |
+	| e_tree_fruit_orange (Laranjeira)	   |
+	| e_building_henhouse			   |
 	|==========================================|
-	|	     Cocho Sobreado		                   |
+	|	     Cocho Sobreado		   |
 	|==========================================|
-	| e_deco_fence_wood		                	   |
+	| e_deco_fence_wood			   |
 	| e_building_manger (Cerca de madeira nova)|
 	********************************************
-
-https://www.facebook.com/md.morpheus
