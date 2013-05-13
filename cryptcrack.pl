@@ -11,7 +11,7 @@ use Data::Dumper;
 
 my $version       = "1.0";
 
-my $maxQueue      = 5000; # Maximum number of WORDS in queue buffer
+my $maxQueue      = 5000; # Numero maximo de palavras no buffer
 my $display_timer = 5;    # Number of seconds to sleep between output
 my $threads_count = 4;
 my $debug         = 0;    # 0,1 or 2
@@ -36,7 +36,7 @@ sub displayTimer {
 
          if (!$quiet) {
              print printf('%02.2f',($count / tv_interval ( $start_time, [gettimeofday])));
-             print " keys per second.\n";
+             print " keys por segundo.\n";
          }
 
 
