@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 #
-# Copyright Dan Faerch 2010.. http://blog.hacker.dk
+# Copyright Dan Faerch 2010... http://the-blackhats.blogspot.com.br/
 #
 use Getopt::Std;
 use Time::HiRes qw( usleep gettimeofday tv_interval);
